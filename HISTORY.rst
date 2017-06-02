@@ -4,7 +4,8 @@ Changelog
 2.0.34 (unreleased)
 -------------------
 
-- No changes yet
+- Calendar tile now renders recurring events
+  [obct537]
 
 2.0.33 (2017-05-8)
 -------------------
