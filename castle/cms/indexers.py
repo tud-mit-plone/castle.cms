@@ -9,6 +9,7 @@ from OFS.interfaces import IItem
 from plone import api
 from plone.app.contenttypes.interfaces import IFile
 from plone.app.contenttypes.interfaces import IImage
+from plone.event.interfaces import IEvent
 from plone.dexterity.interfaces import IDexterityContent
 from plone.indexer.decorator import indexer
 from plone.uuid.interfaces import IUUID
@@ -93,6 +94,14 @@ def getContentTypeFile(obj):
 def getContentTypeImage(obj):
     try:
         return obj.image.contentType
+    except:
+        pass
+
+
+@indexer(IEvent)
+def recurrence(obj):
+    try:
+        return obj.recurrence
     except:
         pass
 
