@@ -4,6 +4,8 @@ Changelog
 2.0.34 (unreleased)
 -------------------
 
+- add upgrade step for event recurrences
+  [tkimnguyen]
 
 - Calendar tile now renders recurring events
   [obct537]
